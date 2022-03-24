@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="STYLE.CSS">
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Cipher</h1>
+        <div class="message-container">
+            <h3 class="section-title">Enter your message here</h3>
+            <textarea type="text" id="message-input" rows="5"></textarea>
+            <p id="message-error"></p>
+        </div>
+        <div class="message-container">
+            <h3 class="section-title">Enter secret code</h3>
+            <textarea id="key-input" rows="5"></textarea>
+            <p id="key-error"></p>
+            <div class="buttons">
+                <button id="encrypt">Encrypt</button>
+                <button id="decrypt">Decrypt</button>
+            </div>
+        </div>
+        <div class="message-container">
+            <h3 class="section-title">Your decrypted message</h3>
+            <textarea id="decryption" rows="5"  readonly=""></textarea>
+            <button id="copy">Copy text</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
